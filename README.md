@@ -13,6 +13,14 @@ Azure Storage Accounts enable secure and scalable cloud storage solutions. This 
 
 ---
 
+## **What is Blob Storage?**  
+Azure Blob Storage is a **highly scalable, cloud-based object storage service** designed for unstructured data such as images, videos, documents, and backups. It provides **low-latency access, high durability, and cost-efficient storage** for applications requiring extensive data storage and retrieval. Blob Storage supports three types of blobs:  
+- **Block Blobs**: Optimized for storing large amounts of unstructured data.  
+- **Append Blobs**: Ideal for logs and append-only data scenarios.  
+- **Page Blobs**: Used for virtual hard disks and frequent read/write operations.
+
+---
+
 ## **Who**  
 Cloud engineers, IT administrators, and developers managing storage solutions in Azure.  
 
@@ -46,17 +54,25 @@ Azure Storage provides **scalable, durable, and cost-effective** cloud storage f
 7. Choose **Geo-Redundant storage (GRS)** for Redundancy
 8. Click **Review + Create** → **Create**.  
 ![image](https://github.com/user-attachments/assets/781bb9c4-4c97-494c-967f-4378e99812e8)
+![image](https://github.com/user-attachments/assets/c1fe950d-9bb2-48b7-bfef-d3cd3b8d8e6e)
+![image](https://github.com/user-attachments/assets/ed23600d-dc64-4519-acef-6ddd98374b72)
 
 ---
 
 ### **Step 2: Create a Blob Storage Container**  
 1. Open the newly created **Storage Account**.  
 2. Navigate to **Containers** under **Data storage**.  
+![image](https://github.com/user-attachments/assets/c1e086be-50f0-49d6-9525-355002a200dc)
+
 3. Click **+ Container**, enter a **name** (e.g., `mycontainer`), and choose an **Access Level**:  
+![image](https://github.com/user-attachments/assets/da1f4ded-e391-4f64-b8ec-9393f2ff653a)
+
    - **Private**: Only the owner can access.  
+![image](https://github.com/user-attachments/assets/f47dd63d-03f5-486a-bd07-8f1773665245)
+
    - **Blob**: Public read access.  
    - **Container**: Public read access to all blobs inside.  
-4. Click **Create**.  
+5. Click **Create**.  
 
 ---
 
