@@ -34,12 +34,18 @@ Azure Storage provides **scalable, durable, and cost-effective** cloud storage f
 
 ### **Step 1: Create an Azure Storage Account**  
 1. Navigate to **Azure Portal** → **Storage Accounts**.  
+![image](https://github.com/user-attachments/assets/a55c31e1-24f1-4193-8692-919e648a0ec6)
+
 2. Click **+ Create**.  
+![image](https://github.com/user-attachments/assets/aa78e0d4-9fdb-47d8-9a21-cba0bbd34ccf)
+
 3. Select the appropriate **Subscription** and create or choose an existing **Resource Group**.  
 4. Enter a **unique Storage Account name** (e.g., `mystorageaccountxyz`).  
 5. Choose **Region** closest to the users for better performance.  
-6. Select **Standard** Performance and **Locally Redundant Storage (LRS)** for cost efficiency.  
-7. Click **Review + Create** → **Create**.  
+6. Under **Performance** Select **Standard: Remommended for most scenarios (general-purpose v2 account)**
+7. Choose **Geo-Redundant storage (GRS)** for Redundancy
+8. Click **Review + Create** → **Create**.  
+![image](https://github.com/user-attachments/assets/781bb9c4-4c97-494c-967f-4378e99812e8)
 
 ---
 
