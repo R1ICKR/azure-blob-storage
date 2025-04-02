@@ -81,13 +81,18 @@ Azure Storage provides **scalable, durable, and cost-effective** cloud storage f
 ![image](https://github.com/user-attachments/assets/6b2429ea-4348-4702-ae69-bed300f8b305)
 
 4. Click **Upload**.  
+![image](https://github.com/user-attachments/assets/33388aec-65d2-48b0-82c5-698f059dc40e)
 
 ---
 
 ### **Step 4: Generate a Shared Access Signature (SAS) URL** *(Optional - Secure Access Sharing)*  
 1. In the **Storage Account**, go to **Shared Access Signature (SAS)**.  
+![image](https://github.com/user-attachments/assets/e8e49ed1-75ef-4631-a58e-d0cc762a9314)
+
 2. Select **Permissions** (Read, Write, Delete, etc.).  
 3. Set an **Expiration Time** for temporary access.  
+![image](https://github.com/user-attachments/assets/03032147-d5a7-457b-aa32-995ce9b0e794)
+
 4. Click **Generate SAS and Connection String**.  
 5. Copy the **Blob SAS URL** and share it for secure file access.  
 
