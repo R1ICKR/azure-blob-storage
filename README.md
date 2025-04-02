@@ -66,20 +66,20 @@ Azure Storage provides **scalable, durable, and cost-effective** cloud storage f
 
 3. Click **+ Container**, enter a **name** (e.g., `mycontainer`), and choose an **Access Level**:  
 ![image](https://github.com/user-attachments/assets/da1f4ded-e391-4f64-b8ec-9393f2ff653a)
-
-   - **Private**: Only the owner can access.  
-![image](https://github.com/user-attachments/assets/f47dd63d-03f5-486a-bd07-8f1773665245)
-
-   - **Blob**: Public read access.  
-   - **Container**: Public read access to all blobs inside.  
-5. Click **Create**.  
+![image](https://github.com/user-attachments/assets/56ea5ecd-b22d-49c2-9a67-5c95cf936a6d)
+![image](https://github.com/user-attachments/assets/c92e08e8-c583-4008-a986-71d6182dd3c9)
 
 ---
 
 ### **Step 3: Upload a File to Blob Storage**  
 1. Open the **Container** created earlier.  
 2. Click **Upload** → **Select a file** (e.g., `.txt`, `.jpg`, `.csv`).  
-3. Configure **Blob Type** (default is **Block Blob**).  
+![image](https://github.com/user-attachments/assets/12fa2c28-8b09-45c7-bf63-d82d2c433a3a)
+![image](https://github.com/user-attachments/assets/ba0c06b1-d9d4-4847-9602-dcc0379857d1)
+
+3. Configure **Blob Type** under **Advanced** (default is **Block Blob**).  
+![image](https://github.com/user-attachments/assets/6b2429ea-4348-4702-ae69-bed300f8b305)
+
 4. Click **Upload**.  
 
 ---
