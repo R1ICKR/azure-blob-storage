@@ -1,99 +1,75 @@
-# Azure Storage (Blob Storage) Lab
+# **Azure Storage (Blob Storage) Lab**  
 
-## Lab Overview
+## **Summary**  
+Azure Storage Accounts enable secure and scalable cloud storage solutions. This lab provides step-by-step guidance on creating a storage account, configuring Blob Storage, and securely managing stored data. With flexible access controls and cost-effective redundancy options, Azure Storage is widely used for applications requiring high availability and durability.  
 
-In this lab, explore **Azure Blob Storage**, a scalable object storage service for storing unstructured data such as text, images, videos, backups, and much more. Learn how to create and configure Blob Storage containers, upload files, and access them programmatically.
+---
 
-This lab is designed for beginners to get hands-on experience with managing Blob Storage in Azure.
+## **Lab Requirements**  
+- **Azure Account** (Free Tier eligible)  
+- **Internet Access** to navigate the **Azure Portal**  
+- **Web Browser** (Microsoft Edge, Google Chrome, or Mozilla Firefox)  
+- **Basic Understanding of Azure Storage Concepts** (recommended but not required)  
 
-## Prerequisites
+---
 
-Ensure the following prerequisites are met:
+## **Who**  
+Cloud engineers, IT administrators, and developers managing storage solutions in Azure.  
 
-- An active [Azure free account](https://azure.microsoft.com/en-us/free/). (Free storage up to 5GB is available within the free tier)
-- Basic understanding of **Azure** portal and **Storage accounts**.
+## **What**  
+This lab demonstrates how to create and configure an **Azure Storage Account** and a **Blob Storage container** to store and manage data in the cloud.  
 
-## Lab Goals
+## **When**  
+Used when storing files, backups, application logs, or media in Azure securely and at scale.  
 
-- Create a **Storage Account** in Azure.
-- Set up a **Blob Storage** container.
-- Upload files into the container.
-- Access and manage the files.
-- Understand storage tiers and Blob types.
+## **Where**  
+Performed in the **Azure Portal**, **Azure CLI**, or **Azure PowerShell**.  
 
-## Steps
+## **Why**  
+Azure Storage provides **scalable, durable, and cost-effective** cloud storage for unstructured data like documents, images, and logs.  
 
-### Step 1: Sign in to the Azure Portal
-1. Go to the [Azure Portal](https://portal.azure.com/).
-2. Sign in with the **Azure account**.
+---
 
-### Step 2: Create a Storage Account
-1. In the Azure portal, click on **Create a resource**.
-2. In the search box, type **Storage Account**, then select **Storage Account - BlobStorage**.
-3. Click **Create** to start the Storage Account creation process.
-4. Fill in the following details:
-   - **Subscription**: Choose the active subscription.
-   - **Resource group**: Select an existing resource group or create a new one.
-   - **Storage account name**: Provide a globally unique name for the storage account.
-   - **Region**: Select a region close by.
-   - **Performance**: Choose **Standard**.
-   - **Replication**: Select **Locally redundant storage (LRS)**.
-   - **Access tier**: Select **Hot** (ideal for frequently accessed data).
-5. Click **Review + Create**, and then click **Create**.
+## **Step-by-Step Instructions**  
 
-### Step 3: Set Up a Blob Storage Container
-1. Once the **Storage Account** is created, navigate to the storage account.
-2. In the **Storage Account** pane, click on **Containers** under **Blob Service**.
-3. Click on **+ Container** to create a new container.
-4. Enter a **name** for the container (e.g., `myblobcontainer`).
-5. Choose the **public access level** (private or blob).
-6. Click **Create**.
+### **Step 1: Create an Azure Storage Account**  
+1. Navigate to **Azure Portal** → **Storage Accounts**.  
+2. Click **+ Create**.  
+3. Select the appropriate **Subscription** and create or choose an existing **Resource Group**.  
+4. Enter a **unique Storage Account name** (e.g., `mystorageaccountxyz`).  
+5. Choose **Region** closest to the users for better performance.  
+6. Select **Standard** Performance and **Locally Redundant Storage (LRS)** for cost efficiency.  
+7. Click **Review + Create** → **Create**.  
 
-### Step 4: Upload Files to the Container
-1. Go to the newly created container and click on **Upload**.
-2. Click **Browse for files** and select a file to upload (e.g., a text file, image, or PDF).
-3. Once the file is selected, click **Upload** to upload the file to the container.
+---
 
-### Step 5: Access and Manage the Files
-1. Once the file is uploaded, it will appear listed in the container.
-2. Click on the file to view its properties, including the URL and metadata.
-3. To download the file, click the **Download** button or use **Azure CLI** or **SDK** to access the Blob programmatically.
+### **Step 2: Create a Blob Storage Container**  
+1. Open the newly created **Storage Account**.  
+2. Navigate to **Containers** under **Data storage**.  
+3. Click **+ Container**, enter a **name** (e.g., `mycontainer`), and choose an **Access Level**:  
+   - **Private**: Only the owner can access.  
+   - **Blob**: Public read access.  
+   - **Container**: Public read access to all blobs inside.  
+4. Click **Create**.  
 
-### Step 6: Explore Blob Storage Tiers and Types
-1. **Blob Types**: Blob Storage supports three types of blobs:
-   - **Block Blobs**: Ideal for text and binary data.
-   - **Append Blobs**: Suitable for logging data.
-   - **Page Blobs**: For storing virtual hard disks (VHD).
-   
-2. **Storage Tiers**: Azure provides different storage tiers to optimize costs:
-   - **Hot**: Optimized for frequent access.
-   - **Cool**: For infrequently accessed data.
-   - **Archive**: For long-term data archiving.
+---
 
-Explore the **Hot** tier by default and switch to **Cool** or **Archive** for testing to see the cost implications.
+### **Step 3: Upload a File to Blob Storage**  
+1. Open the **Container** created earlier.  
+2. Click **Upload** → **Select a file** (e.g., `.txt`, `.jpg`, `.csv`).  
+3. Configure **Blob Type** (default is **Block Blob**).  
+4. Click **Upload**.  
 
-### Step 7: Clean Up Resources
-1. After the lab, delete the **Storage Account** and **Container** to avoid ongoing charges.
-2. In the **Storage Account** pane, click **Delete** and confirm.
+---
 
-## Conclusion
+### **Step 4: Generate a Shared Access Signature (SAS) URL** *(Optional - Secure Access Sharing)*  
+1. In the **Storage Account**, go to **Shared Access Signature (SAS)**.  
+2. Select **Permissions** (Read, Write, Delete, etc.).  
+3. Set an **Expiration Time** for temporary access.  
+4. Click **Generate SAS and Connection String**.  
+5. Copy the **Blob SAS URL** and share it for secure file access.  
 
-In this lab, the following tasks were successfully completed:
-- Created an **Azure Storage Account**.
-- Set up a **Blob Storage container**.
-- Uploaded and accessed files in **Blob Storage**.
-- Explored the **storage tiers** and different **Blob types**.
+---
 
-Azure Blob Storage can now be used for scalable, secure, and cost-efficient storage of unstructured data.
-
-## Next Steps
-
-- Learn more about **Azure File Storage**.
-- Explore **Azure Storage Explorer** to manage Azure storage resources locally.
-- Automate storage tasks using **Azure Logic Apps** or **Azure Functions**.
-
-## Resources
-
-- [Azure Storage Overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction)
-- [Quickstart: Create a storage account](https://docs.microsoft.com/en-us/azure/storage/accounts/storage-account-quickstart)
-- [Azure Blob Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/)
+## **Conclusion**  
+This lab demonstrated how to create an **Azure Storage Account**, set up a **Blob Storage container**, and manage data through the **Azure Portal**. Azure Storage ensures **scalability, security, and high availability**, making it an ideal solution for cloud storage needs.
